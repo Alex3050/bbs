@@ -1,11 +1,16 @@
-body{
-    background-color: #b8e5f8;
+.PageCenter{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(https://static.zhihu.com/heifetz/assets/sign_bg.db29b0fb.png);
 }
 
+.loginPage{
+    background-color: #b8e5f8;
+    background-image: url(https://static.zhihu.com/heifetz/assets/sign_bg.db29b0fb.png);
+}
+.registerPage{
+    background-color: #ff5c00;
+}
 .SignContainer{
     background-color: white;
     width: 400px;

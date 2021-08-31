@@ -1,10 +1,10 @@
 <html>
     <head>
-        <title>登录/注册</title>
+        <title>登录</title>
         {% load static %}
         <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
     </head>
-    <body>
+    <body class="PageCenter loginPage">
         <div>
             <form class="SignContainer" action="\login\" method="post">
                 {% csrf_token %}
