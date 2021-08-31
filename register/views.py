@@ -5,4 +5,5 @@ from django.http import HttpResponse
 # Create your views here.
 
 def register_page(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    info = {}
+    return render(request, "register/register.html", info)
