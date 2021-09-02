@@ -6,11 +6,12 @@
     </head>
     <body class="PageCenter loginPage">
         <div>
-            <form class="SignContainer" action="\login\" method="post">
+            <form class="SignContainer" action="\login\login\" method="post">
                 {% csrf_token %}
                 <input class="input" name="username" type="text" placeholder="手机号或邮箱" value="">
                 <input class="input" name="password" type="password" placeholder="密码" value="">
                 <button class="Button blueButton" type="submit">登录</button>
+                <button class="Button orange-button"><a href="register.html">注册</a></button>
             </form>
             <p>{{ uname }}</p>
             <p>{{ psword }}</p>
