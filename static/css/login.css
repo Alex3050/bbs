@@ -2,19 +2,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    margin: 0;
 }
 
 .loginPage{
     background-color: #b8e5f8;
-    background-image: url(https://static.zhihu.com/heifetz/assets/sign_bg.db29b0fb.png);
 }
 .register-page{
     background-color: #ff7e29;
 }
+.login-content{
+    height: 450px;
+}
 .SignContainer{
     background-color: white;
     width: 100%;
-    height: 100%;
     text-align: center;
     box-sizing: border-box;
     margin: 0;
@@ -44,12 +47,13 @@
     margin-top: 18px;
 }
 .SignContainer .blueButton{
+    border: 1px solid #06f;
     background-color: #06f;
 }
 
 .SignContainer .blueButton:hover{
     background-color: #005ce6;
-    border-color: #005ce6;
+    border:1px solid #005ce6;
 }
 .SignContainer .orange-button{
     background-color: #ff5c00;
@@ -58,6 +62,28 @@
 .SignContainer .orange-button:hover{
     background-color: #ff7e29;
 }
+
+.SignContainer .white-blue-button{
+    border: 1px solid #06f;
+    background-color: white;
+    color: #06f;
+}
+
+.SignContainer .white-blue-button:hover{
+    background-color: #06f;
+    color: white;
+}
+
+.SignContainer .white-orange-button{
+    border: 1px solid #ff5c00;
+    background-color: white;
+    color: #ff5c00;
+}
+
+.SignContainer .white-orange-button:hover{
+    background-color: #ff5c00;
+    color: white;
+}
 .form-title{
     font-size: 38px;
     text-align: center;
@@ -65,13 +91,20 @@
 .center-tab{
     padding: 10px;
     width: 400px;
-    height: 375px;
+    height: 450px;
     background-color: white;
 }
-.title-tab{
+.title-orange{
     border-bottom: 5px solid #ff5c00;
 }
-input:focus{
+.title-blue{
+    border-bottom: 5px solid #005ce6;
+}
+.blue-input:focus{
+    outline: #005ce6 solid 2px;
+    border-radius: 3px;
+}
+.orange-input:focus{
     outline: #ff5c00 solid 2px;
     border-radius: 3px;
 }

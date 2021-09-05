@@ -36,3 +36,4 @@ def register(request):
         info["check_psword"] = check_psword
     return render(request, "login/register.html", info)
 
+# def check_register(username,)
