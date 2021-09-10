@@ -1,5 +1,5 @@
 from django.db.models import query
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import TblUser
 
 # Create your views here.
@@ -17,6 +17,7 @@ def login(request):
             if user.username == request.POST["username"] and \
                user.password == request.POST["password"]:
                 info["result"] = "有这个用户"
+                return redirect("/page/home")
     return render(request, "login/login.html", info)
 
 def register(request):
