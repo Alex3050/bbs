@@ -31,8 +31,9 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
+INSTALLED_APPS = [              # app注册列表
     'login.apps.LoginConfig',
+    'page.apps.PageConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -82,8 +83,7 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'USER': 'root',
-        # 'PASSWORD': 'a2603445',
-        'PASSWORD': 'feng.com',
+        'PASSWORD': 'a2603445',
     }
 }
 
