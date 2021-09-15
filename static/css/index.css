@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    margin: 0;
+}
+#header{
+    width: 100%;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .21);
+    position: absolute;
+    padding: 15px 0px;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.logo{
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+.menu-box{
+    float: left;
+    position: relative;
+}
+#header .menu-box ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+.menu-box li{
+    float: left;
+    display: block;
+}
+.menu-box a{
+    color: black;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    /* padding: 15px 0; */
+    margin: 15px 20px;
+}
+.menu-box a:hover{
+    color: rgb(179, 18, 243);
+}
