@@ -4,6 +4,7 @@
 body{
     font-size: 14px;
     margin: 0;
+    background-color: antiquewhite;
 }
 #header{
     width: 100%;
@@ -50,4 +51,37 @@ body{
 }
 .menu-box a:hover{
     color: rgb(179, 18, 243);
+}
+#page-content{
+    padding: 120px 0 0 0;
+}
+.row{
+    margin: 0 -15px;
+}
+.blog-post{
+    float: left;
+    width: 100%;
+    position: relative; 
+}
+.content{
+    overflow: hidden;
+    display: block;
+    margin-bottom: 30px;
+    background-color: #FFF;
+    box-shadow: 0 5px 10px 0 rgba(146,146,146,.1);
+}
+.content-box{
+    padding: 32px 27px;
+}
+.content-textbox a{
+    color: black;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+}
+.content-textbox a:hover{
+    color: rgb(179, 18, 243);
+}
+.content-textbox h2{
+    margin-top: 0;
 }
