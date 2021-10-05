@@ -4,6 +4,7 @@
     <title>bbs index</title>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <script type="text/javascript" src="{% static 'js/page_home.js' %}"></script>
 </head>
 
 <body>
@@ -39,6 +40,20 @@
     </div>
     <!--内容主体-->
     <div id="page-content">
+        <!--临时发帖区-->
+        <div class="posts-area">
+            <form class="posts-form" id="posts-form" action="\page\send_post\" method="post">
+                {% csrf_token %} <!--csrf验证-->
+                <textarea id="write-area" rows="10" cols="30"></textarea>
+                <button class="blueButton" type="button" onclick="sendpost()">发帖</button>
+            </form>
+        </div>
+        <!--临时显贴区-->
+            <form class="read-form" id="read-form" action="\page\get_post\" method="post">
+                {% csrf_token %} <!--csrf验证-->
+                <textarea id="read-area" rows="10" cols="30">{{read_data}}</textarea>
+                <button class="blueButton" type="summit">读帖</button>
+            </form>
         <!--帖子显示区域-->
         <div class="container">
             <div class="row">
