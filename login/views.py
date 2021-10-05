@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from .models import TblUser
 
 # Create your views here.
+# NOTE lyl 转为类视图
 
 # 接收POST请求数据
 def login(request):
@@ -12,7 +13,6 @@ def login(request):
         info["psword"] = request.POST["password"]
         info["result"] = "没有这个用户"
         query_result = TblUser.objects.all()
-        print(info)
         for user in query_result:
             if user.username == request.POST["username"] and \
                user.password == request.POST["password"]:
